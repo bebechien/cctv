@@ -19,7 +19,7 @@ function file_list($d,$x) {
 }
 
 $list = file_list("./", "gif");
-for($i = 0; $i < count($list)/3; $i++) {
+for($i = count($list)/3; $i >= 0; $i--) {
   printf("<tr>");
   printf("<td><img src=".$list[$i*3]."></td>");
   printf("<td><img src=".$list[$i*3+1]."></td>");
