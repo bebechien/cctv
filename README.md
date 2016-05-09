@@ -28,11 +28,7 @@ input data : h264 파일들이 모여있는 root folder<br>
 
 원본 크기로 생성된 png frame이 용량이 너무 커서 BPG 형태로 보관하기로 마음먹음.
 
-```
-./re-numbering.sh frames_2016-05-05
-```
-
-아직은 windows binary로 encoding중
+아직은 windows binary로 encoding중<br>
 나중에 libbpg를 build해서 shell에서 돌리도록 하는게 편할듯.
 
 ```
