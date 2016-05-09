@@ -23,3 +23,18 @@ input data : h264 파일들이 모여있는 root folder<br>
 ##### 2. 생성된 이미지를 web server에 올리면 자동으로 보여주는 웹페이지
 
 일단 간단히 php로 구현
+
+##### 3. bpg로 변환
+
+원본 크기로 생성된 png frame이 용량이 너무 커서 BPG 형태로 보관하기로 마음먹음.
+
+```
+./re-numbering.sh frames_2016-05-05
+```
+
+아직은 windows binary로 encoding중
+나중에 libbpg를 build해서 shell에서 돌리도록 하는게 편할듯.
+
+```
+bpgenc.exe -o 2016-05-05_1.bpg -a ..\re_frames_2016-05-05\cam1.%d.png
+```
