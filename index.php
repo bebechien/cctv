@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>CCTV thumbnail viewer</title>
+  <title>CCTV thumbnail viewer</title>
 </head>
 
 <body>
